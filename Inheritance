@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[32]:
-
-
 class WebPush:
     def __init__(self, platform, optin, global_frequency_capping, start_date, end_date, language, push_type):
         self.platform = platform
@@ -59,7 +53,6 @@ class InstockPush(WebPush):
             self.stock_info = True
 
 
-
 Trigger1 = TriggerPush("www.tugce.com", "Web", True, 5, "09/07/2022", "10/07/2022", "TRY", "Trigger")
 Bulk1 = BulkPush(5, "Web", True, 4, "09/07/2022", "10/07/2022", "All language", "Bulk")
 Segment1 = SegmentPush("Purchase History", "Web", True, 3, "09/07/2022", "10/07/2022"", "TRY", "Segment")
@@ -76,10 +69,3 @@ Trigger1.sendpush()
 
 print(discount)
 print(Instock1.stock_info)
-
-
-# In[ ]:
-
-
-
-
